@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <Layout className="pt-0">
       {/* Hero Section - Full Screen */}
-      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -30,11 +30,11 @@ const Index = () => {
 
         {/* Content */}
         <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-cream mb-6 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light text-cream mb-6 tracking-wide">
             Carla Grahn
           </h1>
           <div className="w-24 h-px bg-cream/50 mx-auto mb-6"></div>
-          <p className="font-sans text-lg md:text-xl text-cream/90 tracking-widest uppercase">
+          <p className="font-sans text-base sm:text-lg md:text-xl text-cream/90 tracking-widest uppercase px-4">
             {t("home.hero.subtitle")}
           </p>
         </div>
@@ -247,7 +247,7 @@ const Index = () => {
           </p>
           <Link 
             to="/contact" 
-            className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground bg-primary px-10 py-4 hover:bg-accent transition-colors duration-300"
+            className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground bg-primary px-10 py-4 hover:bg-accent transition-colors duration-300 min-h-[44px] flex items-center justify-center"
           >
             {t("common.getInTouch")}
           </Link>

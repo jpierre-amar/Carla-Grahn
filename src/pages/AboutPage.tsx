@@ -159,13 +159,13 @@ const AboutPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/cv"
-              className="inline-block font-sans text-sm uppercase tracking-widest text-primary border border-primary px-8 py-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+              className="inline-block font-sans text-sm uppercase tracking-widest text-primary border border-primary px-8 py-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-300 min-h-[44px] flex items-center justify-center"
             >
               {t("common.viewCv")}
             </Link>
             <Link
               to="/contact"
-              className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground bg-primary px-8 py-3 hover:bg-accent transition-colors duration-300"
+              className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground bg-primary px-8 py-3 hover:bg-accent transition-colors duration-300 min-h-[44px] flex items-center justify-center"
             >
               {t("common.contact")}
             </Link>

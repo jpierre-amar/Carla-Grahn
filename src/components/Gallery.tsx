@@ -90,8 +90,17 @@ const Gallery: React.FC<GalleryProps> = ({ images, className = "" }) => {
             style={{ transitionDelay: `${(index % 6) * 100}ms` }}
           >
             <div
-              className="group cursor-pointer image-hover rounded-sm overflow-hidden bg-muted"
+              className="group cursor-pointer image-hover rounded-sm overflow-hidden bg-muted touch-manipulation"
               onClick={() => openLightbox(index)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  openLightbox(index);
+                }
+              }}
+              aria-label={`View ${image.title || image.alt}`}
             >
               <div className="relative">
                 <img
@@ -126,15 +135,16 @@ const Gallery: React.FC<GalleryProps> = ({ images, className = "" }) => {
 
       {/* Lightbox Dialog */}
       <Dialog open={selectedIndex !== null} onOpenChange={closeLightbox}>
-        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-earth/95 border-none">
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-earth/95 border-none touch-none">
           {selectedIndex !== null && (
             <div className="relative w-full h-full flex items-center justify-center">
               {/* Close button */}
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute top-4 right-4 z-50 text-cream hover:bg-cream/10"
+                className="absolute top-2 md:top-4 right-2 md:right-4 z-50 text-cream hover:bg-cream/10 min-h-[44px] min-w-[44px]"
                 onClick={closeLightbox}
+                aria-label="Close lightbox"
               >
                 <X className="h-6 w-6" />
               </Button>
@@ -143,18 +153,19 @@ const Gallery: React.FC<GalleryProps> = ({ images, className = "" }) => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-cream hover:bg-cream/10"
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 text-cream hover:bg-cream/10 min-h-[44px] min-w-[44px]"
                 onClick={goToPrevious}
+                aria-label="Previous image"
               >
-                <ChevronLeft className="h-8 w-8" />
+                <ChevronLeft className="h-6 w-6 md:h-8 md:w-8" />
               </Button>
 
               {/* Image */}
-              <div className="flex flex-col items-center max-w-full max-h-full p-8">
+              <div className="flex flex-col items-center max-w-full max-h-full p-4 md:p-8">
                 <img
                   src={images[selectedIndex].src}
                   alt={images[selectedIndex].alt}
-                  className="max-w-full max-h-[70vh] object-contain"
+                  className="max-w-full max-h-[60vh] md:max-h-[70vh] object-contain"
                 />
                 <div className="mt-6 text-center">
                   <h3 className="font-serif text-2xl text-cream mb-2">
@@ -182,10 +193,11 @@ const Gallery: React.FC<GalleryProps> = ({ images, className = "" }) => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-cream hover:bg-cream/10"
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 text-cream hover:bg-cream/10 min-h-[44px] min-w-[44px]"
                 onClick={goToNext}
+                aria-label="Next image"
               >
-                <ChevronRight className="h-8 w-8" />
+                <ChevronRight className="h-6 w-6 md:h-8 md:w-8" />
               </Button>
 
               {/* Image counter */}

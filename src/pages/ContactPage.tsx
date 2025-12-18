@@ -112,7 +112,7 @@ const ContactPage = () => {
               
               <Button
                 type="submit"
-                className="w-full sm:w-auto px-12 py-6 font-sans text-sm uppercase tracking-widest bg-primary text-primary-foreground hover:bg-accent transition-colors duration-300"
+                className="w-full sm:w-auto px-12 py-6 font-sans text-sm uppercase tracking-widest bg-primary text-primary-foreground hover:bg-accent transition-colors duration-300 min-h-[44px]"
               >
                 {t("common.sendMessage")}
               </Button>

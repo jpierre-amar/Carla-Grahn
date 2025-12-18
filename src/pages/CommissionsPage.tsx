@@ -152,7 +152,7 @@ const CommissionsPage = () => {
           </p>
           <Link 
             to="/contact" 
-            className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground border border-primary-foreground px-8 py-3 hover:bg-primary-foreground hover:text-primary transition-colors duration-300"
+            className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground border border-primary-foreground px-8 py-3 hover:bg-primary-foreground hover:text-primary transition-colors duration-300 min-h-[44px] flex items-center justify-center"
           >
             {t("common.contact")}
           </Link>

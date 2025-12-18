@@ -77,6 +77,7 @@ const Header = () => {
             size="icon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
+            className="min-h-[44px] min-w-[44px]"
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />

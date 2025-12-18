@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="gap-2 font-sans text-sm uppercase tracking-wide"
+          className="gap-2 font-sans text-sm uppercase tracking-wide min-h-[44px]"
         >
           <Languages className="h-4 w-4" />
           <span>{language.toUpperCase()}</span>

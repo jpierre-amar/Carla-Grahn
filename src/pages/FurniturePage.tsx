@@ -71,7 +71,7 @@ const FurniturePage = () => {
           </p>
           <Link 
             to="/contact" 
-            className="inline-block font-sans text-sm uppercase tracking-widest text-primary border border-primary px-8 py-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+            className="inline-block font-sans text-sm uppercase tracking-widest text-primary border border-primary px-8 py-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-300 min-h-[44px] flex items-center justify-center"
           >
             {t("common.getInTouch")}
           </Link>
