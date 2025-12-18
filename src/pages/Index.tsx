@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[70vh] w-full bg-cover bg-center flex items-center justify-center text-white" style={{ backgroundImage: "url('/placeholder.svg')" }}>
+      <section className="relative h-[70vh] w-full bg-cover bg-center flex items-center justify-center text-white" style={{ backgroundImage: "url('/images/hero-portrait.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center p-4">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-lg">Carla Grahn</h1>
@@ -54,7 +54,7 @@ const Index = () => {
         <div className="container flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <img
-              src="/placeholder.svg" // Replace with an actual portrait of Carla Grahn
+              src="/images/carla-grahn-about.jpg" // Chemin d'accès pour l'image de Carla Grahn
               alt="Carla Grahn"
               className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[400px]"
             />

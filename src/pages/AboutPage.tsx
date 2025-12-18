@@ -12,7 +12,7 @@ const AboutPage = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="md:order-2">
             <img
-              src="/placeholder.svg" // Replace with an actual portrait of Carla Grahn
+              src="/images/carla-grahn-about.jpg" // Chemin d'accès pour l'image de Carla Grahn
               alt="Carla Grahn"
               className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[500px]"
             />
