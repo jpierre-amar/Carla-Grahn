@@ -1,86 +1,256 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { portfolioImages } from "@/data/portfolioImages";
 import Layout from "@/components/Layout";
+import { sculptureImages, furnitureImages, commissionImages } from "@/data/portfolioImages";
+import { useTranslation } from "@/i18n";
 
 const Index = () => {
+  const { t } = useTranslation();
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <Layout>
-      {/* Hero Section */}
-      <section className="relative h-[70vh] w-full bg-cover bg-center flex items-center justify-center text-white" style={{ backgroundImage: "url('/images/hero-portrait.jpg')" }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 text-center p-4">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-lg">Carla Grahn</h1>
-          <p className="text-xl md:text-2xl font-light italic drop-shadow-md">Photographe</p>
-          <Button asChild className="mt-8 px-8 py-3 text-lg">
-            <Link to="/portfolio">Voir le Portfolio</Link>
-          </Button>
+    <Layout className="pt-0">
+      {/* Hero Section - Full Screen */}
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/hero.jpg"
+            alt="Sculpture by Carla Grahn"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-earth/40 via-earth/20 to-background"></div>
         </div>
-      </section>
 
-      {/* Portfolio Preview Section */}
-      <section id="portfolio" className="container py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Mon Portfolio</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfolioImages.slice(0, 3).map((image, index) => (
-            <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-0">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-primary">{image.alt}</h3>
-                  <p className="text-sm text-muted-foreground">{image.category}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        <div className="text-center mt-12">
-          <Button asChild size="lg">
-            <Link to="/portfolio">Voir toutes les œuvres</Link>
-          </Button>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="bg-muted py-16">
-        <div className="container flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2">
-            <img
-              src="/images/carla-grahn-about.jpg" // Chemin d'accès pour l'image de Carla Grahn
-              alt="Carla Grahn"
-              className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[400px]"
-            />
-          </div>
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-4xl font-bold mb-6 text-primary">À propos de Carla Grahn</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Carla Grahn est une photographe passionnée, spécialisée dans les portraits, la mode et la photographie de nature. Avec un œil aiguisé pour la beauté et une capacité unique à capturer l'émotion, Carla crée des images qui racontent des histoires et évoquent des sentiments profonds. Son travail est caractérisé par une esthétique moderne et artistique, mélangeant lumière naturelle et composition soignée pour produire des clichés intemporels.
-            </p>
-            <Button asChild className="mt-8" size="lg">
-              <Link to="/about">En savoir plus</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="container py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-primary">Contactez-moi</h2>
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-lg text-muted-foreground mb-8">
-            Intéressé par une collaboration ou une séance photo ? N'hésitez pas à me contacter.
+        {/* Content */}
+        <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-cream mb-6 tracking-wide">
+            Carla Grahn
+          </h1>
+          <div className="w-24 h-px bg-cream/50 mx-auto mb-6"></div>
+          <p className="font-sans text-lg md:text-xl text-cream/90 tracking-widest uppercase">
+            {t("home.hero.subtitle")}
           </p>
-          <Button asChild size="lg">
-            <Link to="/contact">Envoyer un message</Link>
-          </Button>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-px h-16 bg-gradient-to-b from-cream/0 via-cream/50 to-cream/0"></div>
+        </div>
+      </section>
+
+      {/* Introduction */}
+      <section className="container py-20 md:py-32">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="font-serif text-2xl md:text-3xl text-primary leading-relaxed font-light">
+            "{t("home.intro.quote")}"
+          </p>
+          <div className="mt-8">
+            <span className="font-sans text-sm text-muted-foreground tracking-widest uppercase">
+              — Carla Grahn
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Categories */}
+      <section className="pb-20 md:pb-32">
+        {/* Sculpture */}
+        <div className="container mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="lg:pr-12">
+              <span className="font-sans text-xs tracking-widest uppercase text-accent mb-4 block">
+                01 — {t("common.viewCollection")}
+              </span>
+              <h2 className="font-serif text-4xl md:text-5xl font-light text-primary mb-6">
+                {t("home.sculpture.title")}
+              </h2>
+              <p className="font-sans text-muted-foreground leading-relaxed mb-8">
+                {t("home.sculpture.description")}
+              </p>
+              <Link 
+                to="/sculpture" 
+                className="inline-flex items-center gap-3 font-sans text-sm uppercase tracking-widest text-primary hover:text-accent transition-colors duration-300 group"
+              >
+                {t("common.viewCollection")}
+                <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12"></span>
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <div className="image-hover rounded-sm overflow-hidden">
+                  <img 
+                    src={sculptureImages[0]?.src} 
+                    alt="Sculpture" 
+                    className="w-full aspect-[3/4] object-cover"
+                  />
+                </div>
+                <div className="image-hover rounded-sm overflow-hidden">
+                  <img 
+                    src={sculptureImages[2]?.src} 
+                    alt="Sculpture" 
+                    className="w-full aspect-square object-cover"
+                  />
+                </div>
+              </div>
+              <div className="pt-8">
+                <div className="image-hover rounded-sm overflow-hidden">
+                  <img 
+                    src={sculptureImages[1]?.src} 
+                    alt="Sculpture" 
+                    className="w-full aspect-[2/3] object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Furniture */}
+        <div className="bg-secondary/30 py-20">
+          <div className="container">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
+                <div className="pt-8">
+                  <div className="image-hover rounded-sm overflow-hidden">
+                    <img 
+                      src={furnitureImages[0]?.src} 
+                      alt="Furniture" 
+                      className="w-full aspect-[2/3] object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="image-hover rounded-sm overflow-hidden">
+                    <img 
+                      src={furnitureImages[1]?.src} 
+                      alt="Furniture" 
+                      className="w-full aspect-square object-cover"
+                    />
+                  </div>
+                  <div className="image-hover rounded-sm overflow-hidden">
+                    <img 
+                      src={furnitureImages[2]?.src} 
+                      alt="Furniture" 
+                      className="w-full aspect-[3/4] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2 lg:pl-12">
+                <span className="font-sans text-xs tracking-widest uppercase text-accent mb-4 block">
+                  02 — {t("common.viewCollection")}
+                </span>
+                <h2 className="font-serif text-4xl md:text-5xl font-light text-primary mb-6">
+                  {t("home.furniture.title")}
+                </h2>
+                <p className="font-sans text-muted-foreground leading-relaxed mb-8">
+                  {t("home.furniture.description")}
+                </p>
+                <Link 
+                  to="/furniture" 
+                  className="inline-flex items-center gap-3 font-sans text-sm uppercase tracking-widest text-primary hover:text-accent transition-colors duration-300 group"
+                >
+                  {t("common.viewCollection")}
+                  <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Commissions */}
+        <div className="container mt-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="lg:pr-12">
+              <span className="font-sans text-xs tracking-widest uppercase text-accent mb-4 block">
+                03 — {t("common.viewCollection")}
+              </span>
+              <h2 className="font-serif text-4xl md:text-5xl font-light text-primary mb-6">
+                {t("home.commissions.title")}
+              </h2>
+              <p className="font-sans text-muted-foreground leading-relaxed mb-8">
+                {t("home.commissions.description")}
+              </p>
+              <Link 
+                to="/commissions" 
+                className="inline-flex items-center gap-3 font-sans text-sm uppercase tracking-widest text-primary hover:text-accent transition-colors duration-300 group"
+              >
+                {t("common.learnMore")}
+                <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12"></span>
+              </Link>
+            </div>
+            <div className="relative">
+              <div className="image-hover rounded-sm overflow-hidden">
+                <img 
+                  src={commissionImages[0]?.src} 
+                  alt="Commission work" 
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-8 -right-8 w-40 h-40 border border-accent/20 rounded-sm hidden md:block"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Preview */}
+      <section className="bg-primary py-20 md:py-32">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="aspect-[3/4] rounded-sm overflow-hidden">
+                <img 
+                  src="/images/about-1.jpg" 
+                  alt="Carla Grahn in studio" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -top-6 -left-6 w-24 h-24 border border-accent/30 rounded-sm hidden md:block"></div>
+            </div>
+            <div className="lg:pl-8">
+              <h2 className="font-serif text-4xl md:text-5xl font-light text-primary-foreground mb-6">
+                {t("home.about.title")}
+              </h2>
+              <p className="font-sans text-primary-foreground/80 leading-relaxed mb-6">
+                {t("home.about.description1")}
+              </p>
+              <p className="font-sans text-primary-foreground/80 leading-relaxed mb-8">
+                {t("home.about.description2")}
+              </p>
+              <Link 
+                to="/about" 
+                className="inline-flex items-center gap-3 font-sans text-sm uppercase tracking-widest text-primary-foreground hover:text-accent transition-colors duration-300 group"
+              >
+                {t("common.learnMore")}
+                <span className="w-8 h-px bg-current transition-all duration-300 group-hover:w-12"></span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="container py-20 md:py-32">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="font-serif text-4xl md:text-5xl font-light text-primary mb-6">
+            {t("home.cta.title")}
+          </h2>
+          <p className="font-sans text-muted-foreground leading-relaxed mb-8">
+            {t("home.cta.description")}
+          </p>
+          <Link 
+            to="/contact" 
+            className="inline-block font-sans text-sm uppercase tracking-widest text-primary-foreground bg-primary px-10 py-4 hover:bg-accent transition-colors duration-300"
+          >
+            {t("common.getInTouch")}
+          </Link>
         </div>
       </section>
     </Layout>

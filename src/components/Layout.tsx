@@ -6,13 +6,16 @@ import Footer from "./Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, className = "" }) => {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="min-h-screen flex flex-col texture-overlay">
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main className={`flex-grow pt-24 ${className}`}>
+        {children}
+      </main>
       <Footer />
     </div>
   );

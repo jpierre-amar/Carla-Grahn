@@ -1,0 +1,214 @@
+{
+  "nav": {
+    "home": "Home",
+    "sculpture": "Sculpture",
+    "furniture": "Furniture",
+    "commissions": "Commissions",
+    "about": "About",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "common": {
+    "viewCollection": "View Collection",
+    "learnMore": "Learn More",
+    "getInTouch": "Get in Touch",
+    "contact": "Contact",
+    "viewCv": "View CV",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "allRightsReserved": "All rights reserved"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Sculptor & Artist"
+    },
+    "intro": {
+      "quote": "My inspirations often come from the forms or textures of the materials themselves, or during the learning and research process. Most often, I work very intuitively with the conceptual aspects of my work."
+    },
+    "sculpture": {
+      "title": "Sculpture",
+      "description": "Exploring the dialogue between organic forms and geometric structures. Working with wood, metal, and stone to capture moments of tension and harmony in three-dimensional space."
+    },
+    "furniture": {
+      "title": "Furniture",
+      "description": "Where sculpture meets function. Each piece is conceived as a sculptural object that serves daily life, bringing art into the intimate spaces of the home."
+    },
+    "commissions": {
+      "title": "Commissions",
+      "description": "Site-specific works for public spaces, corporate environments, and private collections. Each commission begins with understanding the space, its purpose, and the people who will interact with the work."
+    },
+    "about": {
+      "title": "About the Artist",
+      "description1": "Originally from Seattle, now based in La Creuse, France, I create sculptures and functional art pieces that explore the relationship between natural forms and human-made structures. My work is informed by a deep appreciation for materials—their histories, textures, and inherent possibilities.",
+      "description2": "With over two decades of experience, I have exhibited internationally and completed commissions for public and private spaces."
+    },
+    "cta": {
+      "title": "Let's Create Together",
+      "description": "Whether you're interested in an existing piece, a custom commission, or simply want to learn more about my work, I'd love to hear from you."
+    }
+  },
+  "about": {
+    "title": "About",
+    "bio1": "I am a sculptor and artist, originally from Seattle, now based in La Creuse, France, working primarily with wood, metal, and stone. My practice spans three interrelated areas: sculptural works, functional furniture, and site-specific commissions.",
+    "bio2": "My inspirations often come from the forms or textures of the materials themselves, or during the learning and research process. Most often, I work very intuitively with the conceptual aspects of my work, allowing each piece to evolve organically through dialogue with the material.",
+    "bio3": "With over twenty years of experience, I have exhibited in galleries and museums throughout Scandinavia and Europe, and have completed numerous public and private commissions. My furniture pieces can be found in homes and collections internationally.",
+    "philosophy": {
+      "title": "Philosophy",
+      "quote": "I believe that sculpture, at its best, creates a pause—a moment where the viewer is invited to see familiar materials transformed into something unexpected. I strive to honor both the history of the material and its potential for new forms."
+    },
+    "studio": {
+      "title": "The Studio",
+      "description1": "My studio is located in La Creuse, France, in a converted space that provides an ideal environment for working on both intimate and large-scale pieces. The rural setting offers inspiration from the natural landscape and allows for a contemplative approach to my work.",
+      "description2": "The studio is equipped with both traditional hand tools and modern machinery, allowing me to work across a range of scales and materials. From delicate maquettes to monumental public sculptures, each piece is conceived and developed in this space.",
+      "description3": "Studio visits can be arranged by appointment for collectors, curators, and those interested in commissioning work."
+    },
+    "materials": {
+      "title": "Materials & Techniques",
+      "wood": {
+        "title": "Wood",
+        "description": "Oak, walnut, ash, cherry, and reclaimed timber. I work with both local French woods and carefully sourced exotic species."
+      },
+      "metal": {
+        "title": "Metal",
+        "description": "Bronze, steel, cor-ten, brass, and copper. From casting to welding, each technique offers unique possibilities."
+      },
+      "stone": {
+        "title": "Stone",
+        "description": "Marble, granite, limestone, and local French stone. Traditional carving methods alongside contemporary approaches."
+      }
+    },
+    "cta": {
+      "title": "Get in Touch",
+      "description": "For exhibition inquiries, commission requests, or studio visits, please don't hesitate to contact me."
+    }
+  },
+  "sculpture": {
+    "title": "Sculpture",
+    "description": "My sculptural work explores the dialogue between organic forms and geometric structures. Working primarily with wood, metal, and stone, I seek to capture moments of tension and harmony in three-dimensional space.",
+    "process": {
+      "title": "The Process",
+      "step1": {
+        "title": "Observation",
+        "description": "Each piece begins with careful observation of natural forms, textures, and the inherent qualities of materials."
+      },
+      "step2": {
+        "title": "Exploration",
+        "description": "Through sketches and maquettes, I explore possibilities, allowing the concept to evolve organically."
+      },
+      "step3": {
+        "title": "Creation",
+        "description": "The final work emerges through an intuitive dialogue between my vision and the material's nature."
+      }
+    }
+  },
+  "furniture": {
+    "title": "Furniture",
+    "description": "Where sculpture meets function. Each piece of furniture is conceived as a sculptural object that serves daily life, bringing art into the intimate spaces of the home. I work closely with clients to create bespoke pieces that reflect their unique stories.",
+    "philosophy": {
+      "title": "Function & Form",
+      "description1": "My furniture pieces are born from the same creative impulse as my sculptures, but with an additional dimension: they must be lived with, touched, used daily.",
+      "description2": "This constraint becomes an opportunity to explore how sculptural forms can enhance everyday moments—a table that invites gathering, a chair that embraces the body, a shelf that displays not just objects but memories.",
+      "description3": "Each piece is handcrafted using traditional joinery techniques combined with contemporary design sensibilities, ensuring both beauty and longevity."
+    },
+    "custom": {
+      "title": "Custom Orders",
+      "description": "Interested in a bespoke piece for your home or project? I welcome collaborations with architects, interior designers, and private collectors to create unique furniture that responds to specific needs and spaces."
+    }
+  },
+  "commissions": {
+    "title": "Commissions",
+    "description": "Throughout my career, I have had the privilege of creating site-specific works for public spaces, corporate environments, and private collections. Each commission begins with a deep understanding of the space, its purpose, and the people who will interact with the work.",
+    "process": {
+      "title": "Commission Process",
+      "step1": {
+        "title": "Initial Consultation",
+        "description": "We begin with a conversation about your vision, the space, budget, and timeline. I visit the site when possible to understand the environment and its unique characteristics."
+      },
+      "step2": {
+        "title": "Concept Development",
+        "description": "I develop initial concepts through sketches, digital renderings, and scale maquettes. This phase allows for exploration and refinement of ideas before committing to materials."
+      },
+      "step3": {
+        "title": "Fabrication",
+        "description": "Once the design is approved, I begin the fabrication process in my studio, working with skilled artisans when required. Regular updates keep you informed of progress."
+      },
+      "step4": {
+        "title": "Installation",
+        "description": "I personally oversee the installation to ensure the work is presented exactly as envisioned. For large-scale pieces, I coordinate with engineers and installation teams."
+      }
+    },
+    "types": {
+      "title": "Types of Commissions",
+      "public": {
+        "title": "Public Art",
+        "description": "Sculptures for parks, plazas, civic buildings, and cultural institutions that engage communities and enhance public spaces."
+      },
+      "corporate": {
+        "title": "Corporate",
+        "description": "Statement pieces for lobbies, headquarters, and office environments that reflect organizational values and inspire creativity."
+      },
+      "private": {
+        "title": "Private",
+        "description": "Bespoke works for homes, gardens, and private collections that become treasured parts of daily life."
+      }
+    },
+    "cta": {
+      "title": "Start a Conversation",
+      "description": "Every commission begins with a conversation. I would love to hear about your project and explore how we might work together."
+    }
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "education": {
+      "title": "Education"
+    },
+    "soloExhibitions": {
+      "title": "Solo Exhibitions"
+    },
+    "groupExhibitions": {
+      "title": "Selected Group Exhibitions"
+    },
+    "commissions": {
+      "title": "Public Commissions"
+    },
+    "awards": {
+      "title": "Awards & Grants"
+    },
+    "collections": {
+      "title": "Public Collections"
+    },
+    "download": {
+      "text": "For a complete CV or additional information, please contact me."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "I welcome inquiries about exhibitions, commissions, and studio visits. Please reach out using the form below or through direct contact.",
+    "form": {
+      "title": "Send a Message"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "email": "Email",
+      "studio": "Studio",
+      "visits": {
+        "title": "Studio Visits",
+        "description": "Studio visits are available by appointment. Please contact me to schedule a time. I welcome collectors, curators, and those interested in commissioning work. Please note that my studio is located in a rural area of La Creuse, France."
+      },
+      "representation": {
+        "title": "Representation",
+        "description": "For sales and exhibition inquiries, please contact me directly through the form above or by email."
+      }
+    },
+    "location": "La Creuse, France"
+  },
+  "footer": {
+    "description": "Sculptor and artist, originally from Seattle, now based in La Creuse, France, creating works that explore the dialogue between organic forms and geometric structures.",
+    "explore": "Explore",
+    "contact": "Contact"
+  }
+}
+

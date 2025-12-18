@@ -1,0 +1,214 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "sculpture": "Sculpture",
+    "furniture": "Mobilier",
+    "commissions": "Commandes",
+    "about": "À propos",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "common": {
+    "viewCollection": "Voir la collection",
+    "learnMore": "En savoir plus",
+    "getInTouch": "Contactez-moi",
+    "contact": "Contact",
+    "viewCv": "Voir le CV",
+    "sendMessage": "Envoyer un message",
+    "name": "Nom",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "allRightsReserved": "Tous droits réservés"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Sculptrice & Artiste"
+    },
+    "intro": {
+      "quote": "Mes inspirations viennent souvent des formes ou des textures des matériaux eux-mêmes, ou pendant le processus d'apprentissage et de recherche. Le plus souvent, je travaille de manière très intuitive avec les aspects conceptuels de mon travail."
+    },
+    "sculpture": {
+      "title": "Sculpture",
+      "description": "Exploration du dialogue entre les formes organiques et les structures géométriques. Travaillant avec le bois, le métal et la pierre pour capturer des moments de tension et d'harmonie dans l'espace tridimensionnel."
+    },
+    "furniture": {
+      "title": "Mobilier",
+      "description": "Là où la sculpture rencontre la fonction. Chaque pièce est conçue comme un objet sculptural qui sert la vie quotidienne, apportant l'art dans les espaces intimes de la maison."
+    },
+    "commissions": {
+      "title": "Commandes",
+      "description": "Œuvres spécifiques à un site pour les espaces publics, les environnements d'entreprise et les collections privées. Chaque commande commence par comprendre l'espace, son but et les personnes qui interagiront avec l'œuvre."
+    },
+    "about": {
+      "title": "À propos de l'artiste",
+      "description1": "Originaire de Seattle, maintenant basée en Creuse, France, je crée des sculptures et des pièces d'art fonctionnel qui explorent la relation entre les formes naturelles et les structures créées par l'homme. Mon travail est informé par une profonde appréciation des matériaux—leurs histoires, textures et possibilités inhérentes.",
+      "description2": "Avec plus de deux décennies d'expérience, j'ai exposé internationalement et réalisé des commandes pour des espaces publics et privés."
+    },
+    "cta": {
+      "title": "Créons ensemble",
+      "description": "Que vous soyez intéressé par une pièce existante, une commande sur mesure, ou que vous souhaitiez simplement en savoir plus sur mon travail, j'aimerais avoir de vos nouvelles."
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "bio1": "Je suis sculptrice et artiste, originaire de Seattle, maintenant basée en Creuse, France, travaillant principalement avec le bois, le métal et la pierre. Ma pratique s'étend sur trois domaines interdépendants : les œuvres sculpturales, le mobilier fonctionnel et les commandes spécifiques à un site.",
+    "bio2": "Mes inspirations viennent souvent des formes ou des textures des matériaux eux-mêmes, ou pendant le processus d'apprentissage et de recherche. Le plus souvent, je travaille de manière très intuitive avec les aspects conceptuels de mon travail, permettant à chaque pièce d'évoluer organiquement à travers un dialogue avec le matériau.",
+    "bio3": "Avec plus de vingt ans d'expérience, j'ai exposé dans des galeries et des musées à travers la Scandinavie et l'Europe, et j'ai réalisé de nombreuses commandes publiques et privées. Mes pièces de mobilier se trouvent dans des maisons et des collections internationalement.",
+    "philosophy": {
+      "title": "Philosophie",
+      "quote": "Je crois que la sculpture, à son meilleur, crée une pause—un moment où le spectateur est invité à voir des matériaux familiers transformés en quelque chose d'inattendu. Je m'efforce d'honorer à la fois l'histoire du matériau et son potentiel pour de nouvelles formes."
+    },
+    "studio": {
+      "title": "L'Atelier",
+      "description1": "Mon atelier est situé en Creuse, France, dans un espace converti qui offre un environnement idéal pour travailler sur des pièces intimes et de grande envergure. Le cadre rural offre une inspiration du paysage naturel et permet une approche contemplative de mon travail.",
+      "description2": "L'atelier est équipé d'outils manuels traditionnels et de machines modernes, me permettant de travailler sur une gamme d'échelles et de matériaux. Des maquettes délicates aux sculptures publiques monumentales, chaque pièce est conçue et développée dans cet espace.",
+      "description3": "Les visites d'atelier peuvent être organisées sur rendez-vous pour les collectionneurs, les conservateurs et ceux qui s'intéressent à la commande d'œuvres."
+    },
+    "materials": {
+      "title": "Matériaux & Techniques",
+      "wood": {
+        "title": "Bois",
+        "description": "Chêne, noyer, frêne, cerisier et bois récupéré. Je travaille avec des bois français locaux et des espèces exotiques soigneusement sélectionnées."
+      },
+      "metal": {
+        "title": "Métal",
+        "description": "Bronze, acier, cor-ten, laiton et cuivre. Du moulage à la soudure, chaque technique offre des possibilités uniques."
+      },
+      "stone": {
+        "title": "Pierre",
+        "description": "Marbre, granit, calcaire et pierre française locale. Méthodes de taille traditionnelles aux côtés d'approches contemporaines."
+      }
+    },
+    "cta": {
+      "title": "Contactez-moi",
+      "description": "Pour les demandes d'exposition, les demandes de commande ou les visites d'atelier, n'hésitez pas à me contacter."
+    }
+  },
+  "sculpture": {
+    "title": "Sculpture",
+    "description": "Mon travail sculptural explore le dialogue entre les formes organiques et les structures géométriques. Travaillant principalement avec le bois, le métal et la pierre, je cherche à capturer des moments de tension et d'harmonie dans l'espace tridimensionnel.",
+    "process": {
+      "title": "Le Processus",
+      "step1": {
+        "title": "Observation",
+        "description": "Chaque pièce commence par une observation attentive des formes naturelles, des textures et des qualités inhérentes des matériaux."
+      },
+      "step2": {
+        "title": "Exploration",
+        "description": "À travers des croquis et des maquettes, j'explore les possibilités, permettant au concept d'évoluer organiquement."
+      },
+      "step3": {
+        "title": "Création",
+        "description": "L'œuvre finale émerge à travers un dialogue intuitif entre ma vision et la nature du matériau."
+      }
+    }
+  },
+  "furniture": {
+    "title": "Mobilier",
+    "description": "Là où la sculpture rencontre la fonction. Chaque pièce de mobilier est conçue comme un objet sculptural qui sert la vie quotidienne, apportant l'art dans les espaces intimes de la maison. Je travaille en étroite collaboration avec les clients pour créer des pièces sur mesure qui reflètent leurs histoires uniques.",
+    "philosophy": {
+      "title": "Fonction & Forme",
+      "description1": "Mes pièces de mobilier naissent de la même impulsion créative que mes sculptures, mais avec une dimension supplémentaire : elles doivent être vécues, touchées, utilisées quotidiennement.",
+      "description2": "Cette contrainte devient une opportunité d'explorer comment les formes sculpturales peuvent améliorer les moments quotidiens—une table qui invite au rassemblement, une chaise qui enveloppe le corps, une étagère qui expose non seulement des objets mais des souvenirs.",
+      "description3": "Chaque pièce est fabriquée à la main en utilisant des techniques d'assemblage traditionnelles combinées à des sensibilités de design contemporain, assurant à la fois la beauté et la longévité."
+    },
+    "custom": {
+      "title": "Commandes sur mesure",
+      "description": "Intéressé par une pièce sur mesure pour votre maison ou projet ? J'accueille les collaborations avec des architectes, des designers d'intérieur et des collectionneurs privés pour créer des meubles uniques qui répondent à des besoins et des espaces spécifiques."
+    }
+  },
+  "commissions": {
+    "title": "Commandes",
+    "description": "Tout au long de ma carrière, j'ai eu le privilège de créer des œuvres spécifiques à un site pour les espaces publics, les environnements d'entreprise et les collections privées. Chaque commande commence par une compréhension approfondie de l'espace, de son but et des personnes qui interagiront avec l'œuvre.",
+    "process": {
+      "title": "Processus de Commande",
+      "step1": {
+        "title": "Consultation initiale",
+        "description": "Nous commençons par une conversation sur votre vision, l'espace, le budget et le calendrier. Je visite le site quand c'est possible pour comprendre l'environnement et ses caractéristiques uniques."
+      },
+      "step2": {
+        "title": "Développement du concept",
+        "description": "Je développe des concepts initiaux à travers des croquis, des rendus numériques et des maquettes à l'échelle. Cette phase permet l'exploration et l'affinement des idées avant de s'engager sur les matériaux."
+      },
+      "step3": {
+        "title": "Fabrication",
+        "description": "Une fois le design approuvé, je commence le processus de fabrication dans mon atelier, travaillant avec des artisans qualifiés lorsque nécessaire. Des mises à jour régulières vous tiennent informé de la progression."
+      },
+      "step4": {
+        "title": "Installation",
+        "description": "Je supervise personnellement l'installation pour m'assurer que l'œuvre est présentée exactement comme prévu. Pour les pièces de grande envergure, je coordonne avec des ingénieurs et des équipes d'installation."
+      }
+    },
+    "types": {
+      "title": "Types de Commandes",
+      "public": {
+        "title": "Art public",
+        "description": "Sculptures pour les parcs, places, bâtiments civiques et institutions culturelles qui engagent les communautés et améliorent les espaces publics."
+      },
+      "corporate": {
+        "title": "Entreprise",
+        "description": "Pièces d'énoncé pour les halls, sièges sociaux et environnements de bureau qui reflètent les valeurs organisationnelles et inspirent la créativité."
+      },
+      "private": {
+        "title": "Privé",
+        "description": "Œuvres sur mesure pour les maisons, jardins et collections privées qui deviennent des parties précieuses de la vie quotidienne."
+      }
+    },
+    "cta": {
+      "title": "Commençons une conversation",
+      "description": "Chaque commande commence par une conversation. J'aimerais entendre parler de votre projet et explorer comment nous pourrions travailler ensemble."
+    }
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "education": {
+      "title": "Formation"
+    },
+    "soloExhibitions": {
+      "title": "Expositions individuelles"
+    },
+    "groupExhibitions": {
+      "title": "Expositions collectives sélectionnées"
+    },
+    "commissions": {
+      "title": "Commandes publiques"
+    },
+    "awards": {
+      "title": "Prix & Bourses"
+    },
+    "collections": {
+      "title": "Collections publiques"
+    },
+    "download": {
+      "text": "Pour un CV complet ou des informations supplémentaires, veuillez me contacter."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "J'accueille les demandes concernant les expositions, les commandes et les visites d'atelier. N'hésitez pas à me contacter en utilisant le formulaire ci-dessous ou par contact direct.",
+    "form": {
+      "title": "Envoyer un message"
+    },
+    "info": {
+      "title": "Contactez-moi",
+      "email": "Email",
+      "studio": "Atelier",
+      "visits": {
+        "title": "Visites d'atelier",
+        "description": "Les visites d'atelier sont disponibles sur rendez-vous. Veuillez me contacter pour planifier un moment. J'accueille les collectionneurs, les conservateurs et ceux qui s'intéressent à la commande d'œuvres. Veuillez noter que mon atelier est situé dans une zone rurale de la Creuse, France."
+      },
+      "representation": {
+        "title": "Représentation",
+        "description": "Pour les ventes et les demandes d'exposition, veuillez me contacter directement via le formulaire ci-dessus ou par email."
+      }
+    },
+    "location": "Creuse, France"
+  },
+  "footer": {
+    "description": "Sculptrice et artiste, originaire de Seattle, maintenant basée en Creuse, France, créant des œuvres qui explorent le dialogue entre les formes organiques et les structures géométriques.",
+    "explore": "Explorer",
+    "contact": "Contact"
+  }
+}
+
